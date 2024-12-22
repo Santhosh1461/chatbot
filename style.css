@@ -1,0 +1,428 @@
+Global Styles
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .bank {
+    color: rgba(255, 255, 255, 0.916);
+  }
+  
+  .para {
+    color: rgba(255, 255, 255, 0.916);
+  }
+  
+  /* Navigation Bar */
+  
+  nav {
+    height: 75px;
+    background-color: rgb(0, 6, 6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    height: 80px;
+    margin-right: 20px;
+  }
+  
+  .list {
+    list-style: none;
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .list li {
+    margin: 0 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: rgb(250, 250, 250);
+  }
+  
+  .list li:hover {
+    color: #f1fd0f;
+  }
+  
+  /* Relative Section */
+  
+  .relative {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #f9f9f9, #fff);
+  }
+  
+  /* Image Styles */
+  
+  .image {
+    width: 100%;
+    height: 600px; /* Set to 600px as per the height in the React component */
+    object-fit: cover;
+    border: 2px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Absolute Section */
+  
+  .heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Typography */
+  
+  .bank {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 800;
+  }
+  
+  .para {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  /* Button Styles */
+  
+  .btn {
+    margin-top: 1.5rem;
+    background-color: #38a169;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #2f855a;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .relative {
+      height: auto; /* Allow height to adjust based on content */
+    }
+    .heading {
+      padding: 0.5rem;
+    }
+    .btn {
+      padding: 0.25rem 0.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heading {
+      padding: 0.25rem;
+    }
+    .btn {
+      padding: 0.1rem 0.25rem;
+    }
+  }
+  
+  /* Robot Icon Styles */
+  
+  .robot-icon {
+    position: absolute; /* Position it absolutely within the section */
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    height: 75px;
+    width: 75px;
+    opacity: 0.5; /* Make the icon semi-transparent */
+    transition: opacity 0.3s; /* Smooth transition for opacity */
+  }
+  
+  .robot-icon:hover {
+    opacity: 1; /* Fully opaque on hover */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .robot-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the div */
+    background-color: white;
+  }
+  
+  /* About Section Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .background-container {
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    padding: 50px; /* Add some padding */
+    position: relative; /* Positioning context for overlay */
+    color: white; /* Change text color for contrast */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1; /* Ensure overlay is above the background */
+  }
+  
+  .container {
+    position: relative;
+    z-index: 2; /* Ensure the text is above the overlay */
+    max-width: 800px;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: justify; /* Justify text */
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify; /* Justify text */
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 1200px;
+    z-index: 2; /* Ensure cards are above the overlay */
+    position: relative; /* Positioning context for cards */
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    width: calc(33% - 20px);
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for box-shadow */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Scale the card up on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a larger shadow for depth */
+  }
+  
+  /* New styles for the enlarged card */
+  .card.enlarged {
+    position: fixed; /* Fix position to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%) scale(1.5); /* Center and scale */
+    z-index: 10; /* Ensure it is above other elements */
+    width: 80%; /* Adjust width as needed */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3); /* Larger shadow */
+  }
+  
+  /* Optional: Add a backdrop when a card is enlarged */
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 5; /* Below the enlarged card */
+    display: block; /* Show backdrop when a card is enlarged */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 45%; /* Maintain aspect ratio */
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    color: #333;
+    margin: 15px 0 10px;
+    text-align: center;
+  }
+  
+  .card-description {
+    font-size: 1em;
+    color: #666;
+    padding: 0 15px 15px;
+    text-align: justify;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Adjust card width for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+        width: 100%; /* Full width for mobile devices */
+    }
+  
+    h1 {
+        font-size: 2em; /* Adjust heading size for smaller screens */
+    }
+  
+    p {
+        font-size: 1em; /* Adjust paragraph size for smaller screens */
+    }
+  
+    .card-title {
+        font-size: 1.3em; /* Adjust card title size for smaller screens */
+    }
+  
+    .card-description {
+        font-size: 0.9em; /* Adjust card description size for smaller screens */
+    }
+  }
+  
+  /* Contact Us Styles */
+  .contact-us {
+    max-width: 600px; /* Maximum width of the form */
+    margin: 50px auto; /* Center the form with some margin at the top */
+    padding: 20px; /* Padding inside the form box */
+    border: 1px solid #ccc; /* Light border around the box */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background for the form */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .contact-us h1 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Darker color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  .contact-us div {
+    margin-bottom: 15px; /* Space between form fields */
+  }
+  
+  .contact-us label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels for emphasis */
+    color: #555; /* Darker color for labels */
+  }
+  
+  .contact-us input,
+  .contact-us textarea {
+    width: 100%; /* Full width for inputs and textarea */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 16px; /* Font size for inputs */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+  }
+  
+  .contact-us input:focus,
+  .contact-us textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .contact-us button {
+    width: 100%; /* Full width for the button */
+    padding: 10px; /* Padding inside the button */
+    background-color: #007bff; /* Primary button color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    font-size: 16px; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  .contact-us button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  .contact-us textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Minimum height for the textarea */
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: rgb(152, 183, 159); /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center align text */
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Max width for the content */
+    margin: 0 auto; /* Center the content */
+  }
+  
+  .footer-links {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 10px 0; /* Margin for spacing */
+  }
+  
+  .footer-links li {
+    display: inline; /* Display links inline */
+    margin: 0 15px; /* Margin between links */
+  }
+  
+  .footer-links a {
+    color: white; /* White link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .copyright {
+    margin-top: 20px; /* Space above copyright text */
+    font-size: 0.9em; /* Smaller font size for copyright */
+  }
